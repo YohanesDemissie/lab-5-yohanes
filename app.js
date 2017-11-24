@@ -21,5 +21,13 @@ function sumAndMultiply(e,f,g){
   var array = [add, multi, e + ' and ' + f + ' and ' + g + ' sum to ' + add + '.', 'The product of ' + e + ' and ' + f + ' and ' + g + ' is ' + multi + '.'];
   return array;
 }
-
 testSumAndMultiply(4,7,5);
+
+var testArray = [2,3,4];
+function sumArray(testArray){
+  var add = sum(testArray[0],testArray[1])[0];
+  var addition = sum(add,testArray[2])[0];
+  var array = [addition, testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' was passed in as an array of numbers, and ' + addition + ' is their sum.'];
+  return array;
+}
+testSumArray(testArray);
