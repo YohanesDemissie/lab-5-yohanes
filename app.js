@@ -31,3 +31,11 @@ function sumArray(testArray){
   return array;
 }
 testSumArray(testArray);
+
+function multiplyArray(testArray){
+  var multi = multiply(testArray[0],testArray[1])[0];
+  var multiplication = multiply(multi, testArray[2])[0];
+  var array = [multiplication,'The numbers ' + testArray[0] + ',' + testArray[1] + ',' + testArray[2] + ' have a product of ' + multiplication + '.'];
+  return array;
+}
+testMultiplyArray(2,3,4);
